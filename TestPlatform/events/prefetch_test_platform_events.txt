@@ -7,77 +7,223 @@ namespace = TestPlatform
 #	prisoner = no
 #	prisoner = yes
 #	min_age = 16
+#	is_ruler = no			BAD
+#	is_ruler = yes			BAD
 #	only_rulers = yes
+#	only_rulers = no			BAD
+#	only_men = yes
+#	only_men = no			BAD
+#	only_women = yes
+#	only_women = no		BAD
 
+#inside the trigger
+#	is_prisoner = yes		BAD
+#	is_prisoner = no			BAD
+
+#To Do:
+# age = 16
+# is_prisoner = no
+# is_ruler = yes
+# max_age = 11
+# capable_only = yes
+# min_age = 16
+# only_capable = yes
+# only_playable = yes
+
+# character_event = {
+	# id = TestPlatform.1
+	# hide_window = yes
+	# ai = no
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = {name = "OK" set_character_flag = test_flag_ai_no }
+# }
+# character_event = {
+	# id = TestPlatform.2
+	# hide_window = yes
+	# ai = yes
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_ai_yes }
+# }
+# character_event = {
+	# id = TestPlatform.3
+	# hide_window = yes
+	# capable_only = yes
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_capable_only_yes }
+# }
+# character_event = {
+	# id = TestPlatform.4
+	# hide_window = yes
+	# capable_only = no
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_capable_only_no }
+# }
+# character_event = {
+	# id = TestPlatform.5
+	# hide_window = yes
+	# prisoner = no
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_prisoner_no }
+# }
+# character_event = {
+	# id = TestPlatform.6
+	# hide_window = yes
+	# prisoner = yes
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_prisoner_yes }
+# }
+# character_event = {
+	# id = TestPlatform.7
+	# hide_window = yes
+	# is_ruler = no
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_is_ruler_no }
+# }
+# character_event = {
+	# id = TestPlatform.8
+	# hide_window = yes
+	# is_ruler = yes
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_is_ruler_yes }
+# }
+# character_event = {
+	# id = TestPlatform.9
+	# hide_window = yes
+	# only_rulers = yes
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_only_rulers_yes }
+# }
+# #only_rulers = no appears to be an invalid condition.
+# character_event = {
+	# id = TestPlatform.10
+	# hide_window = yes
+	# only_rulers = no
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_only_rulers_no }
+# }
+# character_event = {
+	# id = TestPlatform.11
+	# hide_window = yes
+	# only_men = yes
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_only_men_yes }
+# }
+#Not functional
+# character_event = {
+	# id = TestPlatform.12
+	# hide_window = yes
+	# only_men = no
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_only_men_no }
+# }
+# character_event = {
+	# id = TestPlatform.13
+	# hide_window = yes
+	# only_women = yes
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_only_women_yes }
+# }
+#Not functional
+# character_event = {
+	# id = TestPlatform.14
+	# hide_window = yes
+	# only_women = no
+	# trigger = {	}
+	# desc = "test_platform_event"
+	# mean_time_to_happen = {
+		# days = 1
+		# modifier = { factor = 0.01 always = yes }
+	# }
+	# option = { name = "OK" set_character_flag = test_flag_only_women_no }
+# }
 character_event = {
-	id = TestPlatform.1
+	id = TestPlatform.100
 	hide_window = yes
-	ai = no
-	trigger = {	}
+	trigger = {
+		is_prisoner = yes
+	}
 	desc = "test_platform_event"
 	mean_time_to_happen = {
 		days = 1
 		modifier = { factor = 0.01 always = yes }
 	}
-	option = {name = "OK" set_character_flag = test_flag_ai_no }
+	option = { name = "OK" set_character_flag = test_flag_is_prisoner_yes }
 }
 character_event = {
-	id = TestPlatform.2
+	id = TestPlatform.101
 	hide_window = yes
-	ai = yes
-	trigger = {	}
+	trigger = {	
+		is_prisoner = no
+	}
 	desc = "test_platform_event"
 	mean_time_to_happen = {
 		days = 1
 		modifier = { factor = 0.01 always = yes }
 	}
-	option = { name = "OK" set_character_flag = test_flag_ai_yes }
-}
-character_event = {
-	id = TestPlatform.3
-	hide_window = yes
-	capable_only = yes
-	trigger = {	}
-	desc = "test_platform_event"
-	mean_time_to_happen = {
-		days = 1
-		modifier = { factor = 0.01 always = yes }
-	}
-	option = { name = "OK" set_character_flag = test_flag_capable_only_yes }
-}
-character_event = {
-	id = TestPlatform.4
-	hide_window = yes
-	capable_only = no
-	trigger = {	}
-	desc = "test_platform_event"
-	mean_time_to_happen = {
-		days = 1
-		modifier = { factor = 0.01 always = yes }
-	}
-	option = { name = "OK" set_character_flag = test_flag_capable_only_no }
-}
-character_event = {
-	id = TestPlatform.5
-	hide_window = yes
-	prisoner = no
-	trigger = {	}
-	desc = "test_platform_event"
-	mean_time_to_happen = {
-		days = 1
-		modifier = { factor = 0.01 always = yes }
-	}
-	option = { name = "OK" set_character_flag = test_flag_prisoner_no }
-}
-character_event = {
-	id = TestPlatform.6
-	hide_window = yes
-	prisoner = no
-	trigger = {	}
-	desc = "test_platform_event"
-	mean_time_to_happen = {
-		days = 1
-		modifier = { factor = 0.01 always = yes }
-	}
-	option = { name = "OK" set_character_flag = test_flag_prisoner_yes }
+	option = { name = "OK" set_character_flag = test_flag_is_prisoner_no }
 }
